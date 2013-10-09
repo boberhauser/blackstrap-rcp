@@ -2,6 +2,7 @@
 
 # Package Files #
 *.jar
+!blackstrap*.jar
 *.war
 *.ear
 
