@@ -11,11 +11,6 @@ sourceSets {
             srcDir 'src'
         }
     }
-    test {
-        java {
-            srcDir 'test'
-        }
-    }
 }
 
 jar {
@@ -35,6 +30,9 @@ repositories {
 
 dependencies {
 	compile	"org.eclipse.swt:org.eclipse.swt.gtk.linux.x86_64:4.2.2",
-        	"org.eclipse.ui:org.eclipse.ui.workbench:3.7.1.v20120104-1859"
+        	"org.eclipse.ui:org.eclipse.ui.workbench:3.7.1.v20120104-1859",
+    // TODO Host blackstrap    	
+    files('./lib/blackstrap-0.0.1.jar')
+
     testCompile group: 'junit', name: 'junit', version: '4.+'
 }
